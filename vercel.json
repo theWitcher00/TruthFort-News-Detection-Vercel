@@ -8,12 +8,20 @@
     {
       "src": "*.html",
       "use": "@vercel/static"
+    },
+    {
+      "src": "favicon.png",
+      "use": "@vercel/static"
     }
   ],
   "routes": [
     {
       "src": "/(.*\\.html)",
       "dest": "/$1"
+    },
+    {
+      "src": "/favicon.png",
+      "dest": "/favicon.png"
     },
     {
       "src": "/(.*)",
